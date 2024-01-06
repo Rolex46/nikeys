@@ -1,32 +1,31 @@
-import Image from 'next/image'
+import { CustomerReviews, Footer, Hero, NavBar, PopularProducts, Services, Subscribe, SuperQuality } from "@/components";
+import SpecialOffer from "@/components/Services";
 
-import { CustomerReviews, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality } from '@/components'
 
-export default function Home() {
+
+const App = () => {
   return (
-    <main className="relative">
-      <section className='xl:padding-1 wide:padding-r padding-b'>
+    <main className='relative'>
+      <section className='xl:padding-l wide:padding-r padding-b'>
         <Hero />
       </section>
       <section className='padding'>
-       <PopularProducts />
+        <PopularProducts />
       </section>
       <section className='padding'>
-       <SuperQuality />
+        <SuperQuality />
       </section>
       <section className='padding-x py-10'>
-       <Services />
-      </section>
-      <section className='padding'>
-       <SpecialOffers />
+        <Services />
       </section>
       <section className='bg-pale-blue padding'>
-       <CustomerReviews />
+        <CustomerReviews />
       </section>
       <section className='padding-x sm:py-32 py-16 w-full'>
-       <Subscribe />
+        <Subscribe />
       </section>
-      
     </main>
-  )
-}
+  );
+};
+
+export default App;
